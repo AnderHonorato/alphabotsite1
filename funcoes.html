@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlphaBot - Funções</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- seu CSS geral -->
+  <link rel="stylesheet" href="css/funcoes.css">
+</head>
+<body>
+
+  <div id="header">
+    <div id="logo"><h1>Alpha<span class="white">Bot</span></h1></div>
+    <div id="menu">
+      <a href="index.html">Início</a>
+      <a href="funcoes.html" class="active">Funções</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="posts">
+      <div class="post">
+        <h2>Funções do AlphaBot</h2>
+        <span class="data-post">atualizado em 07 agosto de 2025</span>
+
+        <!-- Menu Administrativo -->
+        <h3>📌 Menu Administrativo</h3>
+        <div class="accordion-container">
+
+          <button class="accordion">⚙️ CONFIGURAÇÕES (8 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/auto-responder 1|0</code> — Ativar/desativar respostas automáticas</li>
+              <li><code>/exit 1|0</code> — Configurar saída automática do bot</li>
+              <li><code>/welcome 1|0</code> — Sistema de boas-vindas para novos membros</li>
+              <li><code>/informativo on|off</code> — Ativar/desativar mensagens informativas</li>
+              <li><code>/niver on|off</code> — Sistema de aniversários do grupo</li>
+              <li><code>/mutar on|off</code> — Configurar sistema de mute automático</li>
+              <li><code>/apagarsms on|off</code> — Auto-deletar mensagens do bot</li>
+              <li><code>/apagarsms</code> — Verificar status do auto-delete</li>
+            </ul>
+          </div>
+
+          <button class="accordion">🛠️ MANUTENÇÃO (7 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/manutencao on|off</code> — Ativar/desativar modo de manutenção</li>
+              <li><code>/manutencao</code> — Verificar status da manutenção</li>
+              <li><code>/bloquearmensagem on|off</code> — Bloquear mensagens durante a manutenção</li>
+              <li><code>/bloquearcomandos on|off</code> — Bloquear comandos durante a manutenção</li>
+              <li><code>/aviso</code> — Enviar aviso de manutenção</li>
+              <li><code>/horario</code> — Definir horário de retorno</li>
+              <li><code>/tempo</code> — Definir tempo estimado</li>
+            </ul>
+          </div>
+
+          <button class="accordion">🚪 ENTRADA AUTOMÁTICA (7 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/entrada on|off</code> — Ativar/desativar entrada automática</li>
+              <li><code>/entrada</code> — Verificar status da entrada</li>
+              <li><code>/entrada nome-do-grupo</code> — Definir nome do grupo de entrada</li>
+              <li><code>/entrada link-do-grupo</code> — Definir link do grupo de entrada</li>
+              <li><code>/entrada horario</code> — Definir horário de entrada</li>
+              <li><code>/entrada resposta</code> — Mensagem de resposta automática</li>
+              <li><code>/entrada limpar</code> — Limpar configurações de entrada</li>
+            </ul>
+          </div>
+
+          <button class="accordion">🚫 CONTROLE E MODERAÇÃO (21 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/ban</code> — Banir membro do grupo</li>
+              <li><code>/mute</code> — Mutar membro</li>
+              <li><code>/unmute</code> — Desmutar membro</li>
+              <li><code>/limpar</code> — Limpar mensagens</li>
+              <li><code>/travar</code> — Impedir mensagens temporariamente</li>
+              <li><code>/destravar</code> — Liberar envio de mensagens</li>
+              <li><code>/avisar</code> — Enviar aviso de regra</li>
+              <li><code>/alerta</code> — Enviar alerta para o grupo</li>
+              <li><code>/moderação on|off</code> — Ativar/desativar sistema de moderação</li>
+              <li><code>/logs on|off</code> — Ativar/desativar logs do grupo</li>
+              <li><code>/filtro on|off</code> — Ativar/desativar filtro de palavras</li>
+              <li><code>/filtro palavra</code> — Adicionar palavra ao filtro</li>
+              <li><code>/filtro remover palavra</code> — Remover palavra do filtro</li>
+              <li><code>/filtro lista</code> — Ver lista de palavras bloqueadas</li>
+              <li><code>/silenciar</code> — Silenciar grupo por tempo</li>
+              <li><code>/liberar</code> — Liberar grupo antes do tempo</li>
+              <li><code>/regras</code> — Exibir regras do grupo</li>
+              <li><code>/regras definir</code> — Definir regras do grupo</li>
+              <li><code>/regras limpar</code> — Limpar regras definidas</li>
+              <li><code>/avisos</code> — Ver avisos pendentes</li>
+              <li><code>/avisos limpar</code> — Limpar todos os avisos</li>
+            </ul>
+          </div>
+
+          <button class="accordion">👤 CONTROLE DE PERMISSÃO (7 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/permitir comando</code> — Permitir comando para usuário</li>
+              <li><code>/revogar comando</code> — Revogar permissão de comando</li>
+              <li><code>/permissões</code> — Ver lista de permissões</li>
+              <li><code>/promover</code> — Promover membro</li>
+              <li><code>/rebaixar</code> — Rebaixar membro</li>
+              <li><code>/veradmins</code> — Ver admins do grupo</li>
+              <li><code>/vermods</code> — Ver moderadores</li>
+            </ul>
+          </div>
+
+          <button class="accordion">🛡️ ANTI-FLOOD (6 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/antiflood on|off</code> — Ativar/desativar sistema antiflood</li>
+              <li><code>/antiflood tempo</code> — Tempo entre mensagens permitidas</li>
+              <li><code>/antiflood max</code> — Quantidade máxima por intervalo</li>
+              <li><code>/antiflood acao</code> — Ação após detectar flood</li>
+              <li><code>/antiflood lista</code> — Lista de usuários em flood</li>
+              <li><code>/antiflood limpar</code> — Limpar lista de flood</li>
+            </ul>
+          </div>
+
+          <button class="accordion">📅 AGENDA DE EVENTOS (4 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/evento criar</code> — Criar novo evento</li>
+              <li><code>/evento editar</code> — Editar evento existente</li>
+              <li><code>/evento excluir</code> — Excluir evento</li>
+              <li><code>/evento listar</code> — Listar eventos agendados</li>
+            </ul>
+          </div>
+
+        </div> <!-- /accordion-container -->
+
+        <!-- Menu de Membros -->
+        <h3>🎯 Menu de Membros</h3>
+        <div class="accordion-container">
+
+          <button class="accordion">🎛️ GERAL (5 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/ajuda</code> — Manual completo de comandos</li>
+              <li><code>/menu</code> — Exibir este menu principal</li>
+              <li><code>/info</code> — Informações sobre o bot</li>
+              <li><code>/ping</code> — Testar latência do bot</li>
+              <li><code>/curiosidade</code> — Receber uma curiosidade aleatória</li>
+            </ul>
+          </div>
+
+          <button class="accordion">📀 MÍDIA (5 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/tocarmusica &lt;nome&gt;</code> — Tocar música pelo nome</li>
+              <li><code>/attp &lt;texto&gt;</code> — Criar sticker animado com texto</li>
+              <li><code>/sticker</code> — Converter imagem/gif em sticker</li>
+              <li><code>/hotgif</code> — GIF aleatório da categoria hot</li>
+              <li><code>/hotgif2</code> — GIF aleatório da categoria hot (v2)</li>
+            </ul>
+          </div>
+
+          <button class="accordion">🔎 UTILITÁRIOS (2 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/cep &lt;número&gt;</code> — Consultar informações de CEP</li>
+              <li><code>/clima &lt;cidade&gt;</code> — Consultar clima de uma cidade</li>
+            </ul>
+          </div>
+
+          <button class="accordion">🗓️ AGENDA / ANIVERSÁRIOS (7 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/agenda agendar</code> — Agendar novo evento</li>
+              <li><code>/agenda consultar</code> — Consultar eventos agendados</li>
+              <li><code>/agenda vou</code> — Confirmar presença em evento</li>
+              <li><code>/agenda presença</code> — Ver lista de presenças confirmadas</li>
+              <li><code>/niver DD/MM nome</code> — Cadastrar aniversário</li>
+              <li><code>/niver pendentes</code> — Ver aniversários pendentes</li>
+              <li><code>/niver remover</code> — Remover aniversário cadastrado</li>
+            </ul>
+          </div>
+
+          <button class="accordion">👥 INTERAÇÕES (17 comandos)</button>
+          <div class="panel">
+            <ul>
+              <li><code>/topativos on|off</code> — Sistema de membros mais ativos</li>
+              <li><code>/topativos 1d|7d|30d</code> — Ranking de ativos por período</li>
+              <li><code>/topativos pdf</code> — Relatório em PDF dos mais ativos</li>
+              <li><code>/bafometro @</code> — Medir nível de bêbado do usuário</li>
+              <li><code>/match @ @</code> — Calcular compatibilidade entre usuários</li>
+              <li><code>/enquete &lt;pergunta&gt;</code> — Criar enquete no grupo</li>
+              <li><code>/enquetevotar &lt;n°&gt;</code> — Votar em enquete ativa</li>
+              <li><code>/enqueteresultado</code> — Ver resultado da enquete</li>
+              <li><code>/enquetefechar</code> — Fechar enquete ativa</li>
+              <li><code>/expulsar @user</code> — Votação para expulsar usuário</li>
+              <li><code>/signo</code> — Consultar horóscopo do dia</li>
+              <li><code>/vd</code> — Jogo de verdade ou desafio</li>
+              <li><code>/quem &lt;pergunta&gt;</code> — O bot escolhe alguém aleatoriamente</li>
+              <li><code>/fofo</code> (ou <code>/fofo @</code>) — Medir nível de fofura</li>
+              <li><code>/roleta</code> — Jogo de roleta russa</li>
+              <li><code>/roletarank</code> — Ranking da roleta russa</li>
+              <li><code>/g</code> (ou <code>/gemini</code>) — Conversar com IA Gemini</li>
+            </ul>
+          </div>
+
+        </div> <!-- /accordion-container -->
+
+      </div> <!-- /post -->
+    </div> <!-- /posts -->
+
+    <div id="right-side">
+      <div class="content-right">
+        <h3>Postagens recentes</h3>
+        <div class="post-right"><p>Automação Inteligente para Grupos no WhatsApp</p><a href="index.html">Leia mais</a></div>
+        <div class="post-right" style="border-bottom:none;"><p>Conheça todas as funções que o AlphaBot pode oferecer para o seu grupo no WhatsApp.</p><a href="funcoes.html">Leia mais</a></div>
+      </div>
+
+      <div class="content-right">
+        <h3>Categorias</h3>
+        <a href="funcoes.html">Funções</a><br>
+        <a href="">Trabalho</a><br>
+        <a href="contato.html">Fale conosco</a><br>
+      </div>
+    </div>
+
+    <div id="footer">2025 • Todos os direitos reservados - Anderson Honorato</div>
+  </div> <!-- /content -->
+
+  <script src="js/funcoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Formulário de contato */
+
+.contact-form {
+    background: #222; /* escuro pra combinar */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    max-width: 480px;
+    margin-top: 20px;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1.5px solid #555;
+    background: #333;
+    color: #eee;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00bfff; /* azulzinho maneiro */
+    background: #222;
+    box-shadow: 0 0 12px #00bfff88;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #00bfff;
+    color: #222;
+    border: none;
+    padding: 14px px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px #00bfffcc;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-form button:hover {
+    background-color: #008fcc;
+    box-shadow: 0 5px 12px #008fcccc;
+}
+
+.contact-form button:active {
+    transform: scale(0.98);
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+}

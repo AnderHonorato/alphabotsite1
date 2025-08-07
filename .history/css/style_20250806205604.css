@@ -1,0 +1,11 @@
+/* LIMPEZA DE FORMATAÇÕES */
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* HEADER */
+#header{
+    background-color: #85cc00;
+}

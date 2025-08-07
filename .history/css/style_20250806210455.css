@@ -1,0 +1,26 @@
+/* LIMPEZA DE FORMATAÇÕES */
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* HEADER */
+#header{
+    background-color: #0066CC;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo, #menu{
+    padding: 10px;
+
+}
+#header a:link, #header a:visited{
+    color: #FFFFFF;
+    padding: 8px 12px;
+}
+#header a:hover{
+    background: #FFFFFF;
+    text-decoration:dotted;
+}

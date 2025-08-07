@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaBot - Funções</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/funcoes.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <h1>Alpha<span class="white">Bot</span></h1>
+        </div>
+        <div id="menu">
+            <a href="index.html">Início</a>
+            <a href="funcoes.html" class="active">Funções</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="posts">
+            <div class="post">
+                <h2>Funções do AlphaBot</h2>
+                <span class="data-post">atualizado em 07 agosto de 2025</span>
+
+                <h3>📌 Menu Administrativo</h3>
+
+                <button class="accordion">⚙️ Configurações (8 comandos)</button>
+                <div class="panel">
+                    <ul>
+                        <li>/config welcome</li>
+                        <li>/config bye</li>
+                        <li>/config link</li>
+                        <li>/config regras</li>
+                        <li>/config adm</li>
+                        <li>/config nome</li>
+                        <li>/config foto</li>
+                        <li>/config descr</li>
+                    </ul>
+                </div>
+
+                <button class="accordion">🛠️ Manutenção (7 comandos)</button>
+                <div class="panel">
+                    <ul>
+                        <li>/limpar</li>
+                        <li>/reset</li>
+                        <li>/status</li>
+                        <li>/reiniciar</li>
+                        <li>/backup</li>
+                        <li>/log</li>
+                        <li>/atualizar</li>
+                    </ul>
+                </div>
+
+                <button class="accordion">🚫 Controle e Moderação (25 comandos)</button>
+                <div class="panel">
+                    <ul>
+                        <li>/ban</li>
+                        <li>/mute</li>
+                        <li>/kick</li>
+                        <li>/warn</li>
+                        <li>/clearwarn</li>
+                        <li>... e outros</li>
+                    </ul>
+                </div>
+
+                <h3>🎯 Menu de Membros</h3>
+
+                <button class="accordion">🎛️ Geral (5 comandos)</button>
+                <div class="panel">
+                    <ul>
+                        <li>/ajuda</li>
+                        <li>/regras</li>
+                        <li>/link</li>
+                        <li>/foto</li>
+                        <li>/admins</li>
+                    </ul>
+                </div>
+
+                <button class="accordion">📀 Mídia (5 comandos)</button>
+                <div class="panel">
+                    <ul>
+                        <li>/sticker</li>
+                        <li>/toimg</li>
+                        <li>/play</li>
+                        <li>/ytmp3</li>
+                        <li>/ytmp4</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="right-side">
+            <div class="content-right">
+                <h3>Postagens recentes</h3>
+                <div class="post-right">
+                    <p>Automação Inteligente para Grupos no WhatsApp</p>
+                    <a href="index.html">Leia mais</a>
+                </div>
+                <div class="post-right" style="border-bottom: none;">
+                    <p>Conheça todas as funções que o AlphaBot pode oferecer para o seu grupo no WhatsApp.</p>
+                    <a href="funcoes.html">Leia mais</a>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <h3>Categorias</h3>
+                <a href="funcoes.html">Funções</a><br>
+                <a href="">Trabalho</a><br>
+                <a href="contato.html">Fale conosco</a><br>
+            </div>
+        </div>
+
+        <div id="footer">
+           2025 • Todos os direitos reservados - Anderson Honorato
+        </div>
+    </div>
+
+    <script>
+        const acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

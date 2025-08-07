@@ -1,0 +1,12 @@
+/*
+LIMPEZA DE FORMATAÇÕES
+Este arquivo contém o CSS para o site TecnoLógica, que abrange diversos estilos para elementos HTML.
+O objetivo é garantir uma apresentação consistente e atraente do conteúdo, incluindo cabeçalhos, parágrafos, listas, links e tabelas.
+As regras de estilo definem cores, tamanhos de fonte, espaçamento e outros aspectos visuais para melhorar a experiência do usuário.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
