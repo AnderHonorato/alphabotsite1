@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
+/* FORMATAÇÕES GENERICAS */
 body {
     font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #C4C4C4;
 }
 
@@ -27,20 +28,116 @@ h3 {
 }
 
 .img-post {
-    max-width: 100%;
-    height: auto;
+    width: 620px;
+    max-width: 100%; /* Garante que não ultrapasse a tela */
 }
 
 /* HEADER */
 #header {
     background-color: #0066CC;
-    padding: 15px;
+    padding: 15px 10px;
     text-align: center;
-    color: white;
 }
 
 #logo, #menu {
     padding: 10px;
 }
 
-#he
+#header a:link,
+#header a:visited {
+    color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+#header a:hover {
+    background: #FFFFFF;
+    color: #0066CC;
+    text-decoration: none;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+/* CONTEÚDOS */
+#content {
+    width: 920px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#posts {
+    width: 660px;
+    float: left;
+}
+
+.post {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    text-align: justify;
+}
+
+.data-post {
+    font-size: 13px;
+    border-bottom: 1px solid #0066CC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* RIGHT SIDE (LADO DIREITO) */
+#right-side {
+    width: 240px;
+    float: right;
+}
+
+.content-right {
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-right {
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+/* FORMATAÇÃO LINKS */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #0066CC;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #FFFFFF;
+    color: #0066CC;
+}
+
+/* ======== RESPONSIVIDADE (Mobile) ======== */
+@media (max-width: 768px) {
+    #content {
+        width: 95%;
+        margin: 10px auto;
+    }
+    #posts, #right-side {
+        width: 100%;
+        float: none;
+    }
+    .img-post {
+        width: 100%;
+    }
+}
