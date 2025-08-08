@@ -1,13 +1,22 @@
+/* Formulário de contato */
+
 .contact-form {
-    background: #222;
+    background: #222; /* escuro pra combinar */
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     max-width: 480px;
-    margin: 20px auto; /* centraliza no desktop */
+    margin: 20px auto; /* centraliza e dá margem em cima e embaixo */
     color: #eee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box; /* garante que padding não alarga o form */
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
 }
 
 .contact-form input[type="text"],
@@ -22,7 +31,45 @@
     color: #eee;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    box-sizing: border-box;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00bfff; /* azulzinho maneiro */
+    background: #222;
+    box-shadow: 0 0 8px #00bfff88;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #00bfff;
+    color: #222;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px #00bfffcc;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    display: block;
+    margin: 0 auto; /* centraliza o botão */
+}
+
+.contact-form button:hover {
+    background-color: #008fcc;
+    box-shadow: 0 5px 12px #008fcccc;
+}
+
+.contact-form button:active {
+    transform: scale(0.98);
 }
 
 /* Responsividade básica */
@@ -30,9 +77,7 @@
     .contact-form {
         padding: 20px 15px;
         max-width: 100%;
-    }
-    .contact-form button {
-        width: 100%; /* botão pega largura toda no mobile */
-        padding: 14px 0;
+        border-radius: 0; /* tira as bordas arredondadas no mobile pra ocupar mais espaço */
+        box-shadow: none; /* remove sombra no mobile pra ficar mais clean */
     }
 }
